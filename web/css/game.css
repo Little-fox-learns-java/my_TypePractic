@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url("../image/others/bg.jpg") no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    /*超出部分隐藏*/
+    overflow: hidden;
+
+    font-family: '幼圆';
+    font-weight: bold;
+}
+
+.bottom_black{
+    width: 100%;
+    height: 50px;
+    background: black;
+    position: absolute;
+    bottom: 0px;
+    opacity: 0.8;
+}
+
+.stop_game{
+    width: 200px;
+    height: 50px;
+    position:absolute;
+    background: url("../image/others/sorce1.png");
+    bottom:-14px;
+    left:50px;
+    z-index:9999;
+    text-align:center;
+    padding-top:20px;
+    /*按下去后变手势*/
+    cursor: pointer;
+}
+
+.start_game{
+    width: 200px;
+    height: 50px;
+    position:absolute;
+    background: url("../image/others/sorce1.png");
+    bottom:-14px;
+    left:280px;
+    z-index:9999;
+    text-align:center;
+    padding-top:20px;
+    /*按下去后变手势*/
+    cursor: pointer;
+}
+.score{
+    width: 300px;
+    height: 200px;
+    background: url(../image/others/sorce1.png);
+    background-size: 300px 300px;
+    position: absolute;
+    right: 20px;
+    bottom: 90px;
+    text-align: center;
+    padding-top: 90px;
+    font-size: 80px;
+}
+
+.level{
+    background: antiquewhite;
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    padding-top: 40px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.success{
+    background:seashell;
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top:200px;
+    left: 700px;
+
+    padding-top: 40px;
+    text-align: center;
+    font-size: 50px;
+    /*动画*/
+    animation: success 2s linear;
+    /*隐藏*/
+    display: none;
+
+}
+.success——btn{
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    /*刷新*/
+    cursor: pointer;
+}
+.failed{
+    background:seashell;
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top:200px;
+    left: 700px;
+    /*字体*/
+    padding-top: 40px;
+    text-align: center;
+    font-size: 50px;
+    /*动画*/
+    animation: success 2s linear;
+    /*隐藏*/
+    display: none;
+
+}
+.failed_btn{
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    /*刷新*/
+    cursor: pointer;
+}
+
+@keyframes success {
+     from{top:-300px;}
+     to{top:200px}
+ }
+
+/*字母样式*/
+.letter{
+
+    width:200px;
+    height:200px;
+    position: absolute;
+
+}
+/*screen屏幕*/
+.screen{
+
+    width: 2000px;
+    height: 800px;
+
+}
